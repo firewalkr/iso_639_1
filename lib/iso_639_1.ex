@@ -186,6 +186,11 @@ defmodule Iso639_1 do
     zu: %{name: "Zulu"}
   }
 
+  @doc """
+  Returns whether a value is a valid 2-letter country code.
+
+  Valid input is an atom or string.
+  """
   @spec exists?(any()) :: boolean()
   def exists?(code)
 
