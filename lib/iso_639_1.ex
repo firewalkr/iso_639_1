@@ -1,6 +1,6 @@
-defmodule Iso6391 do
+defmodule Iso639_1 do
   @moduledoc """
-  Documentation for Iso6391.
+  Documentation for Iso639_1.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Iso6391 do
 
   ## Examples
 
-      iex> Iso6391.hello
+      iex> Iso639_1.hello
       :world
 
   """

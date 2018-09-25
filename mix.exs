@@ -1,4 +1,4 @@
-defmodule Iso6391.MixProject do
+defmodule Iso639_1.MixProject do
   use Mix.Project
 
   def project do
