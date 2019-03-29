@@ -1,5 +1,5 @@
 defmodule Iso639_1 do
-  @iso_codes %{
+  @language_by_code %{
     aa: %{name: "Afar"},
     ab: %{name: "Abkhazian"},
     ae: %{name: "Avestan"},
@@ -186,6 +186,8 @@ defmodule Iso639_1 do
     zu: %{name: "Zulu"}
   }
 
+  @iso_codes Map.keys(@language_by_code)
+
   @doc """
   Returns whether a value is a valid 2-letter country code.
 
@@ -195,9 +197,7 @@ defmodule Iso639_1 do
   def exists?(code)
 
   def exists?(code) when is_atom(code) do
-    @iso_codes
-    |> Map.keys()
-    |> Enum.member?(code)
+    Enum.member?(@iso_codes, code)
   end
 
   def exists?(code) when is_binary(code) do
